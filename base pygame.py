@@ -9,10 +9,11 @@ screen = pygame.display.set_mode((width, height))
 background_colour = 0, 150, 200
 
 background_colour1 = 0, 0, 200
-
 spinning_cat = pygame.image.load("spinning_cat.jfif")
 spinning_cat = pygame.transform.scale(spinning_cat,(60,40))
+
 spinning_cat_rect = spinning_cat.get_rect()
+
 
 screen.fill(background_colour)#first
 
@@ -51,7 +52,7 @@ while running:
         print("hii")
         screen.fill(background_colour)
         
-    screen.fill(background_colour)
+
     pygame.display.flip()#last
 
     time.sleep(10/1000)
